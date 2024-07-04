@@ -1,8 +1,13 @@
 package com.project.prices.domain.models;
 
-import java.util.Date;
 
+import lombok.Getter;
+import lombok.Setter;
 
+import java.time.LocalDateTime;
+
+@Setter
+@Getter
 public class Price {
 
     private int productId;
@@ -11,56 +16,19 @@ public class Price {
 
     private int priceList;
 
-    private Date startDate;
+    private LocalDateTime startDate;
 
-    private Date endDate;
+    private LocalDateTime endDate;
 
-    public Price(int productId, int brandId, int priceList, Date startDate, Date endDate) {
+    private Double price;
+
+    public Price(int productId, int brandId, int priceList, LocalDateTime startDate, LocalDateTime endDate, Double price) {
         this.productId = productId;
         this.brandId = brandId;
         this.priceList = priceList;
         this.startDate = startDate;
         this.endDate = endDate;
-    }
-
-    public int getProductId() {
-        return productId;
-    }
-
-    public void setProductId(int productId) {
-        this.productId = productId;
-    }
-
-    public int getBrandId() {
-        return brandId;
-    }
-
-    public void setBrandId(int brandId) {
-        this.brandId = brandId;
-    }
-
-    public int getPriceList() {
-        return priceList;
-    }
-
-    public void setPriceList(int priceList) {
-        this.priceList = priceList;
-    }
-
-    public Date getStartDate() {
-        return startDate;
-    }
-
-    public void setStartDate(Date startDate) {
-        this.startDate = startDate;
-    }
-
-    public Date getEndDate() {
-        return endDate;
-    }
-
-    public void setEndDate(Date endDate) {
-        this.endDate = endDate;
+        this.price = price;
     }
 
     @Override
@@ -71,6 +39,7 @@ public class Price {
                 ", priceList=" + priceList +
                 ", startDate=" + startDate +
                 ", endDate=" + endDate +
+                ", price=" + price +
                 '}';
     }
 }

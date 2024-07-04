@@ -26,10 +26,6 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-thymeleaf</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		<dependency>
@@ -50,13 +46,6 @@
   			<artifactId>junit</artifactId>
   			<scope>test</scope>
 		</dependency>
-		<!-- Jmapper -->
-		<!-- https://www.baeldung.com/java-performance-mapping-frameworks -->
-		<dependency>
-			<groupId>com.googlecode.jmapper-framework</groupId>
-			<artifactId>jmapper-core</artifactId>
-			<version>1.6.1.CR2</version>
-		</dependency>
 		<!-- Swagger -->
 		<dependency>
 			<groupId>io.springfox</groupId>
@@ -64,7 +53,6 @@
 			<version>2.9.2</version>
 			<scope>compile</scope>
 		</dependency>
-
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger2</artifactId>

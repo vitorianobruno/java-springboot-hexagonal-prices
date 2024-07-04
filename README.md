@@ -1,9 +1,7 @@
-# Spring Boot 2 CRUD
+# Spring Boot - Hexagonal Architecture Project
 
 ![](https://img.shields.io/badge/Spring-6DB33F?style=flat&logo=spring&logoColor=white)
-![](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
-![](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
+![](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white)
+![](https://img.shields.io/badge/Database-H2-blue.svg)
 
-Creation of a complete Spring Boot application with CRUD (Create, Read, Update, Delete) operations using Spring Web, 
-Spring Data JPA, Thymeleaf and MySQL.
-
+This application is an example of database queries that follows the hexagonal architecture pattern.

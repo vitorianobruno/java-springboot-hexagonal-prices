@@ -1,4 +1,4 @@
-package com.project.springapp;
+package com.project.prices;
 
 import org.junit.jupiter.api.Test;
 
