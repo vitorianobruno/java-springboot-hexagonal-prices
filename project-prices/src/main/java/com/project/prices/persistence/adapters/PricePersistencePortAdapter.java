@@ -19,11 +19,6 @@ public class PricePersistencePortAdapter implements PricePersistencePort {
         this.priceRepository = priceRepository;
     }
 
-    /*@Override
-    public Optional<Price> findById(Long id) {
-        return priceRepository.findById(id).map(PriceEntity::toDomainModel);
-    }*/
-
     @Override
     public PriceEntity findBySearch(int productId, int brandId, LocalDateTime date) {
         if (priceRepository.findBySearch(productId, brandId, date) != null) {

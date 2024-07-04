@@ -9,8 +9,5 @@ import java.time.LocalDateTime;
 @Service
 public interface PriceServicePort {
 
-    //Optional<Price> getPriceById(Long id);
-
     ResponseEntity<Price> getPrice(LocalDateTime start_date, int product_id, int brand_id);
-
 }

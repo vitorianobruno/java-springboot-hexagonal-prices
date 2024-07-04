@@ -1,0 +1,204 @@
+{
+	"info": {
+		"_postman_id": "656f5c8f-0fe3-4eea-bbdd-f6176d1054c0",
+		"name": "project-prices",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15565137"
+	},
+	"item": [
+		{
+			"name": "Project Prices - Hexagonal Architecture",
+			"item": [
+				{
+					"name": "/prices - Test 1 - 200 OK",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\":35455,\r\n    \"brandId\":1,\r\n    \"startDate\":\"2020-06-14-10.00.00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/prices",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"prices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/prices - Test 2 - 200 OK",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\":35455,\r\n    \"brandId\":1,\r\n    \"startDate\":\"2020-06-14-16.00.00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/prices",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"prices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/prices - Test 3 - 200 OK",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\":35455,\r\n    \"brandId\":1,\r\n    \"startDate\":\"2020-06-14-21.00.00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/prices",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"prices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/prices - Test 4 - 200 OK",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\":35455,\r\n    \"brandId\":1,\r\n    \"startDate\":\"2020-06-15-10.00.00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/prices",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"prices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/prices - Test 5 - 200 OK",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\":35455,\r\n    \"brandId\":1,\r\n    \"startDate\":\"2020-06-16-21.00.00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/prices",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"prices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/prices - 404 NOT FOUND",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\":35455,\r\n    \"brandId\":1,\r\n    \"startDate\":\"2026-06-14-10.00.00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/prices",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"prices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/prices - 400 BAD REQUEST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\":35455,\r\n    \"brandId\":1,\r\n    \"startDate\":\"2026-06-14\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/prices",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"prices"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -5,7 +5,6 @@ import com.project.prices.domain.models.Price;
 import com.project.prices.domain.ports.in.PriceServicePort;
 import com.project.prices.rest.dto.PriceDto;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -25,13 +24,6 @@ public class PriceController {
     public PriceController(PriceServicePort priceServicePort) {
         this.priceServicePort = priceServicePort;
     }
-
-    /*@GetMapping("/{priceId}")
-    public ResponseEntity<Price> getTaskById(@PathVariable Long priceId) {
-        return priceServicePort.getPriceById(priceId)
-                .map(task -> new ResponseEntity<>(task, HttpStatus.OK))
-                .orElse(new ResponseEntity<>(HttpStatus.NOT_FOUND));
-    }*/
 
     @RequestMapping(method=RequestMethod.POST, consumes="application/json")
     public ResponseEntity<Price> search(@Valid @RequestBody PriceDto priceDto) {
