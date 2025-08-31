@@ -28,12 +28,12 @@ public class PriceController {
     @RequestMapping(method=RequestMethod.POST, consumes="application/json")
     public ResponseEntity<Price> search(@Valid @RequestBody PriceDto priceDto) {
         try {
-            return priceServicePort.getPrice(formatDate(priceDto.getStartDate()), priceDto.getProductId(), priceDto.getBrandId());
+            Price price = priceServicePort.getPrice(formatDate(priceDto.getStartDate()), priceDto.getProductId(), priceDto.getBrandId());
+            return ResponseEntity.ok(price);
         } catch (Exception e) {
             log.warn("Couldn't serialize response");
             throw e;
         }
-
     }
 
     public LocalDateTime formatDate(String date) {
